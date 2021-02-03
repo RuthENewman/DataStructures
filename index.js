@@ -1,7 +1,7 @@
-const strings = ['a', 'b', 'c', 'd', 'e'];
+const strings = ['a', 'b', 'c', 'd'];
 const numbers = [1,2,3,4,5];
 
-strings.push('f');
+strings.push('e');
 
 strings.pop();
 
