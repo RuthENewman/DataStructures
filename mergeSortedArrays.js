@@ -12,8 +12,6 @@ const mergeSortedArrays = (firstArray, secondArray) => {
     let firstArrayItem = firstArray[i];
     let secondArrayItem = secondArray[j];
 
-    // Check input
-
     while (firstArrayItem || secondArrayItem) {
         if (!secondArrayItem || firstArrayItem < secondArrayItem) {
             mergedArray.push(firstArrayItem);
