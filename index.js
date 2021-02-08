@@ -1,5 +1,5 @@
 const strings = ['a', 'b', 'c', 'd'];
-const numbers = [1,2,3,4,5];
+// 4*4 = 16 bytes of storage
 
 strings.push('e'); // 0{1}
 console.log('after push', strings); 
