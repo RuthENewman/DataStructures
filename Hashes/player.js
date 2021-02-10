@@ -11,8 +11,8 @@ let player = {
     }
 }
 
-player.ranking = 3;
-player.australianOpenBestResult = 'Winner';
+player.ranking = 3; // 0(1)
+player.australianOpenBestResult = 'Winner'; // 0(1)
 
-const firstRoundResult = player.playMatch();
+const firstRoundResult = player.playMatch(); // 0(1)
 console.log(firstRoundResult);
