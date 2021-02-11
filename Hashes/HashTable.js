@@ -31,14 +31,26 @@ class HashTable {
         }   
         return undefined;
     }
+
+    keys() {
+        const keysArray = [];
+        for(let i = 0; i < this.data.length; i++) {
+            if(this.data[i]) {
+                keysArray.push(this.data[i][0][0]);
+            }
+        }
+        return keysArray;
+    }
 }
 
 const groceryStock = new HashTable(50);
 groceryStock.set('tangerines', 10000);
 groceryStock.set('apples', 500);
+groceryStock.set('lemons', 200);
 
 const quantityOfTangerines = groceryStock.get('tangerines');
 const quantityOfApples = groceryStock.get('apples');
 
 console.log(quantityOfTangerines, quantityOfApples);
+console.log(groceryStock.keys());
 
